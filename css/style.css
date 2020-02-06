@@ -417,8 +417,70 @@ p.footer-copyright {
 border: none;
 background-color: rgba(255, 255, 255, 1);
 
+
 }
 
+.check-list legend{
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: normal;
+  text-align: center;
+
+  color: #000000;
+
+}
+
+.check-list label {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: normal;
+  text-align: center;
+
+  color: #000000;
+}
+
+.price-min-max input[type="text"] {
+  width: 150px;
+  height: 28px;
+
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  letter-spacing: normal;
+  color: #000000;
+  text-align: center;
+
+  border: none;
+
+}
+
+.price-min-max {
+  width: 315px;
+  height: 32px;
+  padding: 2px;
+  margin-left: 420px;
+
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.button-filte {
+  width: 133px;
+  height: 32px;
+
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: normal;
+  color: #000000;
+  text-align: center;
+
+  background-color: rgba(255, 255, 255, 1);
+  border: 2px solid black;
+  border-radius: 5px;
+
+}
 
 .hotel-list h3{
   font-size: 21px;

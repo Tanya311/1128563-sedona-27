@@ -25,7 +25,7 @@
       <section class="form-filter-hotel">
         <h2 class="visually-hidden">Фильтры для поиск гостинницы</h2>
         <form method="get" action="https://echo.htmlacademy.ru">
-          <fieldset>
+          <fieldset class="check-list">
             <legend>Инфраструктура:</legend>
             <ul class="list-style">
               <li>
@@ -42,7 +42,7 @@
               </li>
              </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="check-list">
             <legend>Тип жилья:</legend>
             <ul class="list-style">
               <li>
@@ -59,12 +59,14 @@
               </li>
              </ulclass="list-style">
           </fieldset>
-          <fieldset>
+          <fieldset class="check-list">
             <legend>Стоимость в сутки (р):</legend>
+            <div class="price-min-max">
             <input type="text" name="price-min" placeholder="ОТ 0"></input>
             <input type="text" name="price-max" placeholder="ДО 3000"></input>
+            </div>
           </fieldset>
-          <button type="submit">Показать</button>
+          <button class="button-filte" type="submit">Показать</button>
         </form>
         <!--декоративное размытое изображение гор, будет добавлено как задний фон-->
       </section>
