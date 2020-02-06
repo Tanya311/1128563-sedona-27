@@ -420,3 +420,64 @@ background-color: rgba(255, 255, 255, 1);
 }
 
 
+.hotel-list h3{
+  font-size: 21px;
+  letter-spacing: normal;
+
+  color: #000000;
+
+}
+
+.hotel-list p {
+
+  line-height: 21px;
+  letter-spacing: normal;
+
+  color: #333333;
+  font-weight: 400;
+
+}
+
+.border {
+  border-top: 1px solid #81b3d2;
+}
+
+.hotel-list article{
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  border-bottom: 1px solid #81b3d2;
+}
+
+
+.bottom-hotel-detail {
+  width: 110px;
+  height: 27px;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-top: 8px;
+  padding-bottom: 7px;
+
+  line-height: 21px;
+  letter-spacing: normal;
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+.bottom-hotel-booking {
+  width: 110px;
+  height: 27px;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-top: 8px;
+  padding-bottom: 7px;
+
+  line-height: 21px;
+  letter-spacing: normal;
+  color: #ffffff;
+
+  background-color: #766357;
+}
+
+
