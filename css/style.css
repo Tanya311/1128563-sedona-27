@@ -5,7 +5,7 @@ body {
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 26px;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
@@ -29,15 +29,15 @@ a {
   margin: -1px;
 }
 
+.list-style {
+  list-style: none;
+}
+
 .main-navigation {
   width: 1200px;
   height: 56px;
   background-color: #ffffff;
-}
 
-.site-navigation {
-  list-style: none;
-  line-height: 26px;
 }
 
 .site-navigation a:focus,
@@ -67,7 +67,7 @@ a {
 
 }
 
-.advantage {
+.description {
   position: absolute;
   top: 563px;
   width: 1200px;
@@ -75,5 +75,85 @@ a {
 
   background-color: #ffffff;
 }
+
+.description h2 {
+  margin-top: 61px;
+  margin-left: 380px;
+  width: 440px;
+  height: 48px;
+
+
+  font-size: 21px;
+
+}
+
+.description p {
+  margin-bottom: 56px;
+  margin-left: 355px;
+  width: 489px;
+  height: 13px;
+
+  font-weight: 400;
+
+}
+
+.advantage-item-whith-photo {
+  background-color: #81b3d2;
+  color: #ffffff;
+}
+
+.advantage-item {
+  background-color: #eeeeee;
+  color: #000000;
+
+}
+
+.advantage h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.advantage p {
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.advantage-sublist {
+  width: 1200px;
+  height: 256px;
+  padding: 0px;
+  color: #000000;
+  background-color: #ffffff;
+  display: inline-block;
+
+}
+
+.advantage-sublist li{
+  margin: 0px;
+  width: 390px;
+  height: 256px;
+  display: inline-block;
+
+}
+
+.house {
+  width: 75px;
+  height: 72px;
+  background-image: url("../img/svg-sedona/house.svg");
+  background-size: 75px 72px;
+}
+.eat {
+  width: 75px;
+  height: 72px;
+  background-image: url("../img/svg-sedona/eat.svg");
+  background-size: 75px 72px;
+}
+.souvenirs {
+  width: 75px;
+  height: 72px;
+  background-image: url("../img/svg-sedona/souvenirs.svg");
+  background-size: 75px 72px;
+}
+
 
 
