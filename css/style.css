@@ -286,7 +286,7 @@ a {
 }
 
 
-.buttom-plus {
+.button-plus {
   margin-left: -55px;
   width: 38px;
   height: 38px;
@@ -299,7 +299,7 @@ a {
   border: none;
 }
 
-.buttom-minus {
+.button-minus {
   margin-right: -10px;
   width: 38px;
   height: 38px;
@@ -312,13 +312,13 @@ a {
   border: none;
 }
 
-.buttom-plus:hover,
-.buttom-minus:hover {
+.button-plus:hover,
+.button-minus:hover {
   color: #000000;
 }
 
-.buttom-plus:focus,
-.buttom-minus:focus {
+.button-plus:focus,
+.button-minus:focus {
   color: #81b3d2;
   outline: none;
 }
@@ -399,6 +399,8 @@ p.footer-copyright {
 
 /* INNER PAGE*/
 
+/*шапка*/
+
 .header-inner {
   width: 1200px;
   height: 329px;
@@ -411,6 +413,8 @@ p.footer-copyright {
   background-repeat: no-repeat;
   background-position: 100%;
 }
+
+/*форма*/
 
 .form-filter-hotel fieldset {
 
@@ -464,7 +468,7 @@ background-color: rgba(255, 255, 255, 1);
   border-radius: 5px;
 }
 
-.button-filte {
+.button-filter {
   width: 133px;
   height: 32px;
 
@@ -482,6 +486,34 @@ background-color: rgba(255, 255, 255, 1);
 
 }
 
+/*сортировка*/
+
+.sorting h3 {
+  font-size: 21px;
+}
+
+.sorting h4 {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.list-sorting li:first-child {
+  font-size: 12px;
+  letter-spacing: normal;
+
+  color: #81b3d2;
+}
+
+.list-sorting li:not(first-child) {
+  font-size: 12px;
+  letter-spacing: normal;
+
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
+/*список отелей*/
 .hotel-list h3{
   font-size: 21px;
   letter-spacing: normal;
@@ -489,6 +521,7 @@ background-color: rgba(255, 255, 255, 1);
   color: #000000;
 
 }
+
 
 .hotel-list p {
 
