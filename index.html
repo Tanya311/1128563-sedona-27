@@ -74,39 +74,39 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="search-hotel">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостинниц в Седоне</p>
-        <img src="img/map.png" width="1200" height="593" alt="Карта штата">
-        <h3>Поиск гостинницы в Седоне</h3>
-        <form method="get" action="https://echo.htmlacademy.ru">
-          <label for="date-of-arrival">Дата заезда</label>
-          <input type="date" name="date-of-arrival" id="date-of-arrival">
-          <label for="date-of-departure">Дата выезда</label>
+        <button class="head-form" type="button"> Поиск гостинницы в Седоне</button>
+        <form class="form-search" method="get" action="https://echo.htmlacademy.ru">
+          <label class="date-of-arrival" for="date-of-arrival">Дата заезда:</label>
+          <input class="date-of-arrival" type="date" name="date-of-arrival" id="date-of-arrival">
+          <label for="date-of-departure">Дата выезда:</label>
           <input type="date" name="date-of-departure" id="date-of-departure">
           <label for="numbe-of-adults">Взрослые</label>
-          <button type="submit"> - </button>
+          <button class="buttom-minus" type="submit"> - </button>
           <input type="number" name="numbe-of-adults" id="numbe-of-adults" min="0" value="0">
-          <button type="submit"> + </button>
+          <button class="buttom-plus" type="submit"> + </button>
           <label for="numbe-of-child">Дети</label>
-          <button type="submit"> - </button>
+          <button class="buttom-minus" type="submit"> - </button>
           <input type="number" name="numbe-of-child" id="numbe-of-child" min="0" value="0">
-          <button type="submit"> + </button>
-          <button type="submit">Найти</button>
+          <button class="buttom-plus" type="submit"> + </button>
+          <button class="button-form" type="submit">Найти</button>
         </form>
       </section>
+      <img src="img/map.png" width="1200" height="593" alt="Карта штата">
     </main>
-    <footer>
-      <div>
+    <footer class="footer">
+      <div class="footer-contacts">
         <p>#VisitSedona</p>
         <p>тел.: +7(495)666-02-66</p>
       </div>
-      <div>
-        <a href="twitter.sedona">Twitter</a>
-        <a href="facebook.sedona">Facebook</a>
-        <a href="youtube.sedona">YouTube</a>
+      <div class="footer-social">
+        <a class="social-button" href="twitter.sedona">twitter</a>
+        <a class="social-button " href="facebook.sedona">Facebook</a>
+        <a class="social-button " href="youtube.sedona">YouTube</a>
       </div>
-      <p>Website by
+      <p class="footer-copyright">Website by
         <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </p>
     </footer>
