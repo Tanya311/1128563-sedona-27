@@ -1,7 +1,7 @@
 body {
-  margin-right: 40px;
-  margin-left: 40px;
+  margin: 0;
   padding: 0;
+  width: 1200px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -12,6 +12,8 @@ body {
   text-align: center;
 
   background-color: #ffffff;
+  position: relative;
+
 }
 
 a {
@@ -25,6 +27,12 @@ a {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+.main-navigation {
+  width: 1200px;
+  height: 56px;
+  background-color: #ffffff;
 }
 
 .site-navigation {
@@ -44,3 +52,28 @@ a {
 .active-link {
   color: #766357;
 }
+
+.header-background-photo {
+  width: 1200px;
+  height: 773px;
+  top: center;
+
+  background-color: #000000;
+  background-image: url("../img/svg-sedona/intro-mask.svg"), url("../img/svg-sedona/intro-welcome.svg"), url("../img/background-photo.jpg");
+  background-size: 1200px 59px, 459px 353px, 1200px 773px;
+  background-repeat: no-repeat;
+  background-position: right 0px top 507px, right 370px top 132px, 100%;
+
+
+}
+
+.advantage {
+  position: absolute;
+  top: 563px;
+  width: 1200px;
+  height: 216px;
+
+  background-color: #ffffff;
+}
+
+
