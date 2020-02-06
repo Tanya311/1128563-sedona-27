@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header>
+    <header class="header-inner">
       <nav class="main-navigation">
         <a href="index.html">
           <img class="logo" src="img/logo.png" width="140" height="71" alt="Логотип Sedona">
         </a>
-        <ul class="site-navigation">
+        <ul class="site-navigation list-style">
           <li><a href="index.html">Информация</a></li>
           <li><a href="galery.html">Фото и видео</a></li>
           <li><a href="map.html">Карта штата</a></li>
@@ -22,12 +22,12 @@
       </nav>
     </header>
     <main>
-      <section>
+      <section class="form-filter-hotel">
         <h2 class="visually-hidden">Фильтры для поиск гостинницы</h2>
         <form method="get" action="https://echo.htmlacademy.ru">
           <fieldset>
             <legend>Инфраструктура:</legend>
-            <ul>
+            <ul class="list-style">
               <li>
                 <input type="checkbox" name="swimming-pool" id="swimming-pool" checked>
                 <label for="swimming-pool">Бассейн</label>
@@ -44,7 +44,7 @@
           </fieldset>
           <fieldset>
             <legend>Тип жилья:</legend>
-            <ul>
+            <ul class="list-style">
               <li>
                 <input type="checkbox" name="hotel" id="hotel" checked>
                 <label for="hotel">Гостинница</label>
@@ -57,7 +57,7 @@
                 <input type="checkbox" name="apartments" id="apartments" checked>
                 <label for="apartments">Апартаменты</label>
               </li>
-             </ul>
+             </ulclass="list-style">
           </fieldset>
           <fieldset>
             <legend>Стоимость в сутки (р):</legend>

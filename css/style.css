@@ -35,6 +35,21 @@ a {
 }
 
 /*стилилизация шапки*/
+
+.header-background-photo {
+  width: 1200px;
+  height: 773px;
+  top: center;
+
+  background-color: #000000;
+  background-image: url("../img/svg-sedona/intro-mask.svg"), url("../img/svg-sedona/intro-welcome.svg"), url("../img/background-photo.jpg");
+  background-size: 1200px 59px, 459px 353px, 1200px 773px;
+  background-repeat: no-repeat;
+  background-position: right 0px top 507px, right 370px top 132px, 100%;
+}
+
+
+
 .main-navigation {
   width: 1200px;
   height: 56px;
@@ -56,19 +71,6 @@ a {
   color: #766357;
 }
 
-.header-background-photo {
-  width: 1200px;
-  height: 773px;
-  top: center;
-
-  background-color: #000000;
-  background-image: url("../img/svg-sedona/intro-mask.svg"), url("../img/svg-sedona/intro-welcome.svg"), url("../img/background-photo.jpg");
-  background-size: 1200px 59px, 459px 353px, 1200px 773px;
-  background-repeat: no-repeat;
-  background-position: right 0px top 507px, right 370px top 132px, 100%;
-
-
-}
 /*стилилизация преимуществ*/
 .description {
   position: absolute;
@@ -87,7 +89,6 @@ a {
 
 
   font-size: 21px;
-
 }
 
 .description p {
@@ -393,6 +394,29 @@ p.footer-copyright {
 
 .footer-copyright a:active {
   color: #bdbbbc;
+}
+
+
+/* INNER PAGE*/
+
+.header-inner {
+  width: 1200px;
+  height: 329px;
+  object-fit: contain;
+  top: center;
+
+  background-color: #000000;
+  background-image: url("../img/filter-background.jpg");
+  background-size:  1200px 562px;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+.form-filter-hotel fieldset {
+
+border: none;
+background-color: rgba(255, 255, 255, 1);
+
 }
 
 
