@@ -14,7 +14,6 @@ body {
 
   background-color: #ffffff;
   position: relative;
-
 }
 
 a {
@@ -53,8 +52,8 @@ a {
 .main-navigation {
   width: 1200px;
   height: 56px;
-  background-color: #ffffff;
 
+  background-color: #ffffff;
 }
 
 .site-navigation a:focus,
@@ -87,7 +86,6 @@ a {
   width: 440px;
   height: 48px;
 
-
   font-size: 21px;
 }
 
@@ -98,7 +96,6 @@ a {
   height: 13px;
 
   font-weight: 400;
-
 }
 
 .advantage-item-whith-photo {
@@ -141,24 +138,28 @@ a {
   width: 390px;
   height: 256px;
   display: inline-block;
-
 }
 
 .house {
   width: 75px;
   height: 72px;
+
   background-image: url("../img/svg-sedona/house.svg");
   background-size: 75px 72px;
 }
+
 .eat {
   width: 75px;
   height: 72px;
+
   background-image: url("../img/svg-sedona/eat.svg");
   background-size: 75px 72px;
 }
+
 .souvenirs {
   width: 75px;
   height: 72px;
+
   background-image: url("../img/svg-sedona/souvenirs.svg");
   background-size: 75px 72px;
 }
@@ -281,8 +282,6 @@ a {
 
 .date-of-arrival {
   margin-top: 55px;
-
-
 }
 
 
@@ -403,7 +402,7 @@ p.footer-copyright {
 
 .header-inner {
   width: 1200px;
-  height: 329px;
+  height: 273px;
   object-fit: contain;
   top: center;
 
@@ -417,30 +416,48 @@ p.footer-copyright {
 /*форма*/
 
 .form-filter-hotel fieldset {
-
 border: none;
-background-color: rgba(255, 255, 255, 1);
-
-
+background-color: rgba(255, 255, 255, 0);
 }
 
-.check-list legend{
+.check-list legend {
+  padding-bottom: 16px;
   font-size: 16px;
   line-height: 21px;
   letter-spacing: normal;
-  text-align: center;
-
-  color: #000000;
-
+  text-align: left;
+  color: #ffffff;
 }
 
 .check-list label {
   font-size: 14px;
   line-height: 21px;
-  letter-spacing: normal;
-  text-align: center;
+  font-weight: 400;
+  text-align: left;
+  color: #ffffff;
+}
 
-  color: #000000;
+.check-list input[type="checkbox"] {
+  position: absolute;
+  left: 10px;
+}
+
+.infrastructure {
+  position: absolute;
+  top: 100px;
+  left: 72px;
+}
+
+.type-of-housing {
+  position: absolute;
+  top: 100px;
+  left: 326px;
+}
+
+.cost-of-housing {
+  position: absolute;
+  top: 100px;
+  left: 811px;
 }
 
 .price-min-max input[type="text"] {
@@ -451,9 +468,10 @@ background-color: rgba(255, 255, 255, 1);
   line-height: 21px;
   font-weight: 700;
   letter-spacing: normal;
-  color: #000000;
-  text-align: center;
+  color: #ffffff;
+  text-align: left;
 
+  background-color: rgba(255, 255, 255, 0);
   border: none;
 
 }
@@ -462,9 +480,8 @@ background-color: rgba(255, 255, 255, 1);
   width: 315px;
   height: 32px;
   padding: 2px;
-  margin-left: 420px;
 
-  border: 2px solid black;
+  border: 2px solid #ffffff;
   border-radius: 5px;
 }
 
@@ -472,16 +489,21 @@ background-color: rgba(255, 255, 255, 1);
   width: 133px;
   height: 32px;
 
+  position: absolute;
+  top: 206px;
+  left: 897px;
+
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: normal;
-  color: #000000;
+  color: #ffffff;
   text-align: center;
+  outline: none;
 
-  background-color: rgba(255, 255, 255, 1);
-  border: 2px solid black;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid ffffff;
   border-radius: 5px;
 
 }
@@ -519,18 +541,14 @@ background-color: rgba(255, 255, 255, 1);
   letter-spacing: normal;
 
   color: #000000;
-
 }
 
-
 .hotel-list p {
-
   line-height: 21px;
   letter-spacing: normal;
 
   color: #333333;
   font-weight: 400;
-
 }
 
 .border {
@@ -543,7 +561,6 @@ background-color: rgba(255, 255, 255, 1);
 
   border-bottom: 1px solid #81b3d2;
 }
-
 
 .bottom-hotel-detail {
   width: 110px;
