@@ -505,7 +505,15 @@ background-color: rgba(255, 255, 255, 0);
   background-color: rgba(255, 255, 255, 0);
   border: 2px solid ffffff;
   border-radius: 5px;
+}
 
+.button-filter:focus,
+.button-filter:hover {
+  background-color: #ffffff;
+  font-weight: 400;
+  color: #000000;
+  outline: none;
+  border: none;
 }
 
 /*сортировка*/
@@ -520,27 +528,48 @@ background-color: rgba(255, 255, 255, 0);
   font-weight: 400;
 }
 
-.list-sorting li:first-child {
-  font-size: 12px;
-  letter-spacing: normal;
-
-  color: #81b3d2;
-}
-
-.list-sorting li:not(first-child) {
+.list-sorting {
   font-size: 12px;
   letter-spacing: normal;
 
   color: rgba(0, 0, 0, 0.3);
 }
 
+.list-sorting li:first-child,
+.list-sorting  li:last-child {
+  font-size: 12px;
+  letter-spacing: normal;
+
+  color: #81b3d2;
+}
+
+.list-sorting a:focus,
+.list-sorting a:hover {
+  color: #81b3d2;
+  outline: none;
+}
+
+.list-sorting a:active {
+  color: #000000;
+}
+
 
 /*список отелей*/
-.hotel-list h3{
+.hotel-name {
   font-size: 21px;
   letter-spacing: normal;
 
   color: #000000;
+}
+
+.hotel-name:focus,
+.hotel-name:hover {
+  color: #81b3d2;
+  outline: none;
+}
+
+.hotel-name:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .hotel-list p {
@@ -562,7 +591,8 @@ background-color: rgba(255, 255, 255, 0);
   border-bottom: 1px solid #81b3d2;
 }
 
-.bottom-hotel-detail {
+
+.button-hotel-detail {
   width: 110px;
   height: 27px;
   padding-left: 17px;
@@ -577,7 +607,19 @@ background-color: rgba(255, 255, 255, 0);
   background-color: #81b3d2;
 }
 
-.bottom-hotel-booking {
+.button-hotel-detail:focus,
+.button-hotel-detail:hover {
+  background-color: #669ec0;
+  outline: none;
+}
+
+.button-hotel-detail:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+
+.button-hotel-booking {
   width: 110px;
   height: 27px;
   padding-left: 17px;
@@ -590,6 +632,17 @@ background-color: rgba(255, 255, 255, 0);
   color: #ffffff;
 
   background-color: #766357;
+}
+
+.button-hotel-booking:focus,
+.button-hotel-booking:hover {
+  background-color: #604e43;
+  outline: none;
+}
+
+.button-hotel-booking:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
 }
 
 
