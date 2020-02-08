@@ -19,13 +19,12 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="main">
       <!--декоративные изображения гор и Welcome Sedona, будут добавлены как задний фон-->
         <section class="description">
           <h2>Cедона - небольшой городок в аризоне, заслуживающий большего!</h2>
           <p>рассмотрим 5 причин, по которым Седона круче чем гранд каньон</p>
        </section>
-
       <section class="advantage">
         <ul class="advantage-list list-style">
           <li class="advantage-item-whith-photo">
@@ -79,18 +78,18 @@
         <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостинниц в Седоне</p>
         <button class="head-form" type="button"> Поиск гостинницы в Седоне</button>
         <form class="form-search" method="get" action="https://echo.htmlacademy.ru">
-          <label class="date-of-arrival" for="date-of-arrival">Дата заезда:</label>
-          <input class="date-of-arrival" type="date" name="date-of-arrival" id="date-of-arrival">
-          <label for="date-of-departure">Дата выезда:</label>
-          <input type="date" name="date-of-departure" id="date-of-departure">
+          <label class="date-of-arrival" for="dateOfArrival">Дата заезда:</label>
+          <input class="date-of-arrival" type="date" name="date-of-arrival" id="dateOfArrival">
+          <label for="dateOfDeparture">Дата выезда:</label>
+          <input type="date" name="date-of-departure" id="dateOfDeparture">
           <label for="numbe-of-adults">Взрослые</label>
-          <button class="button-minus" type="submit"> - </button>
-          <input type="number" name="numbe-of-adults" id="numbe-of-adults" min="0" value="0">
-          <button class="button-plus" type="submit"> + </button>
+          <button class="button-minus" type="button"> - </button>
+          <input type="number" name="numbe-of-adults" id="numbeOfAdults" min="0" value="0">
+          <button class="button-plus" type="button"> + </button>
           <label for="numbe-of-child">Дети</label>
-          <button class="button-minus" type="submit"> - </button>
-          <input type="number" name="numbe-of-child" id="numbe-of-child" min="0" value="0">
-          <button class="button-plus" type="submit"> + </button>
+          <button class="button-minus" type="button"> - </button>
+          <input type="number" name="numbe-of-child" id="numbeOfChild" min="0" value="0">
+          <button class="button-plus" type="button"> + </button>
           <button class="button-form" type="submit">Найти</button>
         </form>
       </section>
