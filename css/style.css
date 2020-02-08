@@ -1,10 +1,11 @@
 /*глобальные стили*/
+* {
+  outline: 1px solid red;
+}
 body {
-
-
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 1.5em;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
@@ -29,7 +30,7 @@ a {
 
 .list-style {
   list-style: none;
-  padding: 0px;
+  padding-left: 0px;
 }
 
 .content {
@@ -37,25 +38,35 @@ a {
   margin-left: auto;
   max-width: 1200px;
 }
+
 /*стилилизация шапки*/
-
-.header-background-photo {
-
-  min-height: 560px;
+.background-photo {
+  min-height: 505px;
 
   background-color: #2f9aa3;
   background-image: url("../img/svg-sedona/intro-mask.svg"), url("../img/svg-sedona/intro-welcome.svg"), url("../img/background-photo.jpg");
   background-size: 1200px 59px, 459px 353px, 1200px 773px;
   background-repeat: no-repeat;
-  background-position: right 0px top 507px, right 370px top 132px, 100%;
+  background-position: right 0px top 450px, right 50% top 22%, 100%;
 }
 
 .main-navigation {
-  width: 1200px;
-  height: 56px;
-
   background-color: #ffffff;
 }
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+}
+
+/* НЕ РАБОТАЮТ ПАДДИНГИ*/
+.site-navigation a {
+  display: blok;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
 
 .site-navigation a:focus,
 .site-navigation a:hover  {
@@ -71,16 +82,28 @@ a {
 .active-link {
   color: #766357;
 }
+.logo {
+  position: absolute;
+  left:50%;
+  top: 0;
+  margin-left: -70px;
+
+}
 
 
 /*стилилизация преимуществ*/
 .description {
   background-color: #ffffff;
+  margin-left: 350px;
+  margin-right: 350px;
+  padding: 10px;
+}
 }
 
 .description h2 {
 
   font-size: 21px;
+  margin-bottom: 30px;
 }
 
 .description p {
@@ -88,16 +111,33 @@ a {
 
   font-weight: 400;
 }
+.advantage-list {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
 
 .advantage-item-whith-photo {
+  display: flex;
   background-color: #81b3d2;
   color: #ffffff;
 }
 
+
 .advantage-item {
   background-color: #eeeeee;
   color: #000000;
+  padding-left: 15px;
+  padding-right: 15px;
+  flex-grow: 1;
+  padding-top: 50px;
+  padding-bottom: 55px;
+  box-sizing: border-box;
 }
+
 
 .advantage h3 {
   font-size: 21px;
@@ -114,18 +154,43 @@ a {
   color: #333333;
 }
 
-.advantage-sublist {
 
+.advantage-item-whith-photo {
+  width: 1200;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.advantage-item-whith-photo img{
+  vertical-align: baseline;
+  width: 800px;
+}
+
+.advantage-item-whith-photo div{
+
+  max-width: 400px;
+  vertical-align: center;
+  box-sizing: border-box;
+
+  padding-left: 60px;
+  padding-top: 46px;
+  padding-right: 60px;
+
+}
+
+
+.advantage-sublist {
   color: #000000;
   background-color: #ffffff;
-  display: inline-block;
+  display: flex;
+
+  justify-content: space-between;
+
 
 }
 
-.advantage-sublist li{
-
-  display: inline-block;
-}
 
 
 /*стилилизация формы*/
@@ -155,11 +220,35 @@ a {
 }
 
 .form-search {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 0px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 55px;
   width: 568px;
-  height: 395px;
+  box-sizing: border-box;
+
   background-color: #ffffff;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
+
+.form-search div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+
 
 .search-hotel h2 {
   font-size: 30px;
@@ -174,8 +263,6 @@ a {
 }
 
 .form-search label {
-
-
   font-family:inherit;
   font-size: 14px;
   line-height: 26px;
@@ -183,13 +270,17 @@ a {
   color: #000000;
   text-transform: uppercase;
   text-align: left;
+  padding-right: 8px;
 }
 
 .form-search input[type="date"] {
+  width: 356px;
+  min-height: 38px;
+  font-size: 14px;
 
 
   font-family:inherit;
-  font-size: inherit;
+
   line-height: inherit;
   font-weight: inherit;
   color: inherit;
@@ -212,11 +303,13 @@ a {
 }
 
 .form-search input[type="number"] {
+  width: 40px;
+  height: 50px;
 
 
   font-family:inherit;
-  font-size: inherit;
-  line-height: 2inherit6px;
+  font-size: 14px;
+
   font-weight: inherit;
   color: inherit;
   text-transform: inherit;
@@ -236,12 +329,10 @@ a {
   border: inside 2px solid #e5e5e5;
 }
 
-.date-of-arrival {
-
-}
 
 
 .button-plus {
+
   font-size: 21px;
   font-weight: 700;
   color: #cacaca;
@@ -300,10 +391,14 @@ a {
 
 
   background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .footer-contacts {
   font-size: 21px;
+  text-align: left;
 }
 
 .social-button {

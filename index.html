@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="content">
-    <header class="header-background-photo">
+    <header>
       <nav class="main-navigation">
         <a href="#">
           <img class="logo" src="img/logo.png" width="140" height="71" alt="Логотип Sedona">
@@ -23,6 +23,7 @@
       </nav>
     </header>
     <main class="main">
+      <div class="background-photo"> </div>
       <!--декоративные изображения гор и Welcome Sedona, будут добавлены как задний фон-->
         <section class="description">
           <h2>Cедона - небольшой городок в аризоне, заслуживающий большего!</h2>
@@ -31,23 +32,28 @@
       <section class="advantage">
         <ul class="advantage-list list-style">
           <li class="advantage-item-whith-photo">
-            <h3>Настоящий городок</h3>
-            <p> &#45; №1  &#45;</p>
-            <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-            <img src="img/feature-picture.jpg" width="800" height="256" alt="Фотография города Седона">
+
+              <div class="advantage-town-column">
+              <h3>Настоящий городок</h3>
+              <p> &#45; №1  &#45;</p>
+              <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+              <img src="img/feature-picture.jpg" width="800" height="256" alt="Фотография города Седона">
+
+
             <ul class="advantage-sublist list-style">
               <li>
-                <div class="house"> </div>
+
                 <h3>Жильё</h3>
                 <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
               <li>
-                <div class="eat"> </div>
+
                 <h3>Еда</h3>
                 <p>Всегда заказывайте фирмерный бургер, Вы не разочаруетесь!</p>
               </li>
               <li>
-                <div class="souvenirs"></div>
+
                 <h3>Сувениры</h3>
                 <p>Не только китайского, но и местного производства</p>
               </li>
@@ -55,9 +61,11 @@
           </li>
           <li class="advantage-item-whith-photo">
             <img src="img/bridge-picture.jpg" width="800" height="256" alt="Фотография Моста дьявола">
-            <h3>Там есть мост дьявола</h3>
-            <p>&#45; №2 &#45;</p>
-            <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
+            <div>
+              <h3>Там есть мост дьявола</h3>
+              <p>&#45; №2 &#45;</p>
+              <p>Да, по нему можно пройти! Если конечно Вы осмелитесь</p>
+            </div>
           </li>
           <li class="advantage-item">
             <h3>Небольшая площадь</h3>
@@ -81,18 +89,24 @@
         <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостинниц в Седоне</p>
         <button class="head-form" type="button"> Поиск гостинницы в Седоне</button>
         <form class="form-search" method="get" action="https://echo.htmlacademy.ru">
-          <label class="date-of-arrival" for="dateOfArrival">Дата заезда:</label>
-          <input class="date-of-arrival" type="date" name="date-of-arrival" id="dateOfArrival">
-          <label for="dateOfDeparture">Дата выезда:</label>
-          <input type="date" name="date-of-departure" id="dateOfDeparture">
-          <label for="numbe-of-adults">Взрослые</label>
-          <button class="button-minus" type="button"> - </button>
-          <input type="number" name="numbe-of-adults" id="numbeOfAdults" min="0" value="0">
-          <button class="button-plus" type="button"> + </button>
-          <label for="numbe-of-child">Дети</label>
-          <button class="button-minus" type="button"> - </button>
-          <input type="number" name="numbe-of-child" id="numbeOfChild" min="0" value="0">
-          <button class="button-plus" type="button"> + </button>
+          <div class="date-of-arrival">
+            <label  for="dateOfArrival">Дата заезда:</label>
+            <input  type="date" name="date-of-arrival" id="dateOfArrival">
+          </div>
+          <div>
+            <label for="dateOfDeparture">Дата выезда:</label>
+            <input type="date" name="date-of-departure" id="dateOfDeparture">
+          </div>
+          <div>
+            <label for="numbe-of-adults">Взрослые</label>
+            <button class="button-minus" type="button"> - </button>
+            <input type="number" name="numbe-of-adults" id="numbeOfAdults" min="0" value="0">
+            <button class="button-plus" type="button"> + </button>
+            <label for="numbe-of-child">Дети</label>
+            <button class="button-minus" type="button"> - </button>
+            <input type="number" name="numbe-of-child" id="numbeOfChild" min="0" value="0">
+            <button class="button-plus" type="button"> + </button>
+          </div>
           <button class="button-form" type="submit">Найти</button>
         </form>
       </section>
