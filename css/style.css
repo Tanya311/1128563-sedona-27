@@ -29,12 +29,13 @@ a {
 
 .list-style {
   list-style: none;
+  padding: 0px;
 }
+
 .content {
   margin-right: auto;
   margin-left: auto;
   max-width: 1200px;
-
 }
 /*стилилизация шапки*/
 
@@ -42,7 +43,7 @@ a {
 
   min-height: 560px;
 
-  background-color: #000000;
+  background-color: #2f9aa3;
   background-image: url("../img/svg-sedona/intro-mask.svg"), url("../img/svg-sedona/intro-welcome.svg"), url("../img/background-photo.jpg");
   background-size: 1200px 59px, 459px 353px, 1200px 773px;
   background-repeat: no-repeat;
@@ -60,6 +61,7 @@ a {
 .site-navigation a:hover  {
   color: #81b3d2;
   outline: none;
+  cursor: pointer;
 }
 
 .site-navigation a:active {
@@ -69,6 +71,7 @@ a {
 .active-link {
   color: #766357;
 }
+
 
 /*стилилизация преимуществ*/
 .description {
@@ -138,10 +141,12 @@ a {
   border: none;
 };
 
-.head-form:focus, .head-form:hover  {
+.head-form:focus,
+.head-form:hover  {
   color: white;
   background-color: #000000;
   outline: none;
+  cursor: pointer;
 }
 
 .head-form:active {
@@ -198,6 +203,7 @@ a {
 
 .form-search input[type="date"]:hover  {
   background-color: #ebebeb;
+  cursor: pointer;
 }
 
 .form-search input[type="date"]:focus {
@@ -222,6 +228,7 @@ a {
 
 .form-search input[type="number"]:hover  {
   background-color: #ebebeb;
+  cursor: pointer;
 }
 
 .form-search input[type="number"]:focus {
@@ -255,6 +262,7 @@ a {
 .button-plus:hover,
 .button-minus:hover {
   color: #000000;
+  cursor: pointer;
 }
 
 .button-plus:focus,
@@ -279,6 +287,7 @@ a {
   color: white;
   background-color: #669ec0;
   outline: none;
+  cursor: pointer;
 }
 
 .button-form:active {
@@ -309,6 +318,7 @@ a {
   background-color: #669ec0;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 
 .social-button:active {
@@ -326,6 +336,7 @@ p.footer-copyright {
 .footer-copyright a:hover  {
   color: #81b3d2;
   outline: none;
+  cursor: pointer;
 }
 
 .footer-copyright a:active {
@@ -339,7 +350,7 @@ p.footer-copyright {
 
   min-height: 273px;
 
-  background-color: #000000;
+  background-color: #2f9aa3;
   background-image: url("../img/filter-background.jpg");
   background-size:  cover;
   background-repeat: no-repeat;
@@ -435,6 +446,7 @@ background-color: rgba(255, 255, 255, 0);
   color: #000000;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 
 /*сортировка*/
@@ -449,30 +461,31 @@ background-color: rgba(255, 255, 255, 0);
   font-weight: 400;
 }
 
-.list-sorting {
+.list-sorting a {
   font-size: 12px;
   letter-spacing: normal;
   line-height: 18px;
+  font-weight: 400;
 
   color: rgba(0, 0, 0, 0.3);
-}
-
-.list-sorting li:first-child,
-.list-sorting  li:last-child {
-  font-size: 12px;
-  letter-spacing: normal;
-
-  color: #81b3d2;
+  border-bottom: 1px dotted;
 }
 
 .list-sorting a:focus,
 .list-sorting a:hover {
   color: #81b3d2;
   outline: none;
+  cursor: pointer;
 }
 
 .list-sorting a:active {
   color: #000000;
+  border: none;
+}
+
+a.list-sorting-active-link {
+  color: #81b3d2;
+  border: none;
 }
 
 
@@ -488,6 +501,7 @@ background-color: rgba(255, 255, 255, 0);
 .hotel-name:hover {
   color: #81b3d2;
   outline: none;
+  cursor: pointer;
 }
 
 .hotel-name:active {
@@ -537,6 +551,7 @@ background-color: rgba(255, 255, 255, 0);
 .button-hotel-detail:hover {
   background-color: #669ec0;
   outline: none;
+  cursor: pointer;
 }
 
 .button-hotel-detail:active {
@@ -557,6 +572,7 @@ background-color: rgba(255, 255, 255, 0);
 .button-hotel-booking:hover {
   background-color: #604e43;
   outline: none;
+  cursor: pointer;
 }
 
 .button-hotel-booking:active {
