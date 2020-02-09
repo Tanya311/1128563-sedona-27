@@ -151,7 +151,6 @@ a {
 
 .advantage-item-whith-photo div{
   max-width: 400px;
-  vertical-align: center;
   box-sizing: border-box;
   padding-left: 48px;
   padding-top: 25px;
@@ -382,8 +381,6 @@ a {
 
 /*стилилизация подвала*/
 .footer {
-
-
   background-color: rgba(255, 255, 255, 0.9);
   display: flex;
   justify-content: space-around;
@@ -433,131 +430,104 @@ p.footer-copyright {
 }
 
 /* INNER PAGE*/
-/*шапка*/
+
+/*форма*/
 
 .form-filter-hotel{
+  min-height: 217px;
 
-  min-height: 273px;
-
-  background-color: #2f9aa3;
+  background-color: #6799a2;
   background-image: url("../img/filter-background.jpg");
   background-size:  cover;
   background-repeat: no-repeat;
   background-position: 100%;
 }
 
-/*форма*/
-.form-filter-hotel {
-  display: flex;
-  flex-wrap: wrap;
-
-}
-
 .form  {
 display: flex;
 justify-content: space-between;
+
 width: 1200px;
 margin-left: auto;
 margin-right: auto;
+padding-top: 31px;
+
 border: none;
 background-color: rgba(255, 255, 255, 0);
 }
 
-.form div:first-child {
+.check {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.check li {
+  margin-bottom: 23px;
 }
 
 .form fieldset {
-  margin-left: 50px;
-  padding-top: 50px;
+  margin-left: 65px;
+  margin-right: 30px;
+  padding-top: 31px;
+
   border: none;
   }
 
-
-.form ul{
+.check ul{
  display: flex;
  flex-direction: column;
  justify-content: space-between;
  align-items: flex-start;
+ margin-top: -10px;
+ margin-bottom: 0px;
 
- margin: 20px;
 }
 
-.form div {
-  width: 500;
-
- }
-
-.check-list legend {
-
-
+.form legend {
   font-size: 16px;
-  line-height: 21px;
   letter-spacing: normal;
   text-align: left;
   color: #ffffff;
 }
 
-.check-list label {
+.check label {
   font-size: 14px;
-  line-height: 21px;
   font-weight: 400;
   text-align: left;
   color: #ffffff;
-}
-
-.check-list input[type="checkbox"] {
-
-}
-
-.infrastructure {
-
-
-}
-
-.type-of-housing {
-
-
-}
-
-.cost-of-housing {
-
-
+  margin-left: 13px;
 }
 
 .price-min-max input[type="text"] {
+  margin-top: -10px;
 
   font-size: 14px;
-  line-height: 21px;
   font-weight: 700;
-  letter-spacing: normal;
   color: #ffffff;
   text-align: left;
 
   background-color: rgba(255, 255, 255, 0);
   border: none;
-
 }
 
 .price-min-max {
-
-
+  margin-top: -20px;
   border: 2px solid #ffffff;
   border-radius: 5px;
 }
 
 .button-filter {
+  padding: 11px 35px;
+  margin-top: 50px;
 
-
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: normal;
+  font-size: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
   color: #ffffff;
-  text-align: center;
-  outline: none;
+  text-align: inherit;
 
+  outline: none;
   background-color: rgba(255, 255, 255, 0);
   border: 2px solid ffffff;
   border-radius: 5px;
@@ -587,47 +557,57 @@ background-color: rgba(255, 255, 255, 0);
 .sorting h3 {
   font-size: 21px;
   margin-right: 49px;
-
-
-
 }
 
 .sorting h4 {
   font-size: 12px;
   margin-right: 40px;
-
   font-weight: 400;
-
 }
 
 .list-sorting {
   flex-grow: 1;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
+.ascending-descending {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 0px;
+}
 
 .list-sorting a {
   font-size: 12px;
   letter-spacing: normal;
   line-height: 18px;
   font-weight: 400;
-  margin-right: 33px;
-
+  margin-right: 40px;
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted;
 }
 
-
+.ascending-descending a {
+  font-size: 12px;
+  letter-spacing: normal;
+  line-height: 18px;
+  font-weight: 400;
+  margin-left: 10px;
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted;
+}
 
 .list-sorting a:focus,
-.list-sorting a:hover {
+.list-sorting a:hover,
+.ascending-descending a:focus,
+.ascending-descending a:hover {
   color: #81b3d2;
   outline: none;
   cursor: pointer;
 }
 
-.list-sorting a:active {
+.list-sorting a:active,
+.ascending-descending a:active {
   color: #000000;
   border: none;
 }
@@ -636,7 +616,6 @@ a.list-sorting-active-link {
   color: #81b3d2;
   border: none;
 }
-
 
 /*список отелей*/
 .hotel-name {
@@ -679,9 +658,7 @@ a.list-sorting-active-link {
   margin-top: 6px;
   margin-bottom: 7px;
   margin-right: 75px;
-
 }
-
 
 .column-2 div {
   display: flex;
@@ -698,8 +675,6 @@ a.list-sorting-active-link {
   justify-content: flex-start;
   align-items: center;
   padding: 30px 70px;
-
-
 
   border-bottom: 1px solid #81b3d2;
 }
