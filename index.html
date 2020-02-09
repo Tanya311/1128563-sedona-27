@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="content">
+    <div class="page">
     <header>
       <nav class="main-navigation">
         <a href="#">
@@ -29,31 +29,28 @@
           <h2>Cедона - небольшой городок в аризоне, заслуживающий большего!</h2>
           <p>рассмотрим 5 причин, по которым Седона круче чем гранд каньон</p>
        </section>
-      <section class="advantage">
+
+
+
+       <section class="advantage">
         <ul class="advantage-list list-style">
           <li class="advantage-item-whith-photo">
-
-              <div class="advantage-town-column">
+            <div>
               <h3>Настоящий городок</h3>
               <p> &#45; №1  &#45;</p>
               <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-              <img src="img/feature-picture.jpg" width="800" height="256" alt="Фотография города Седона">
-
-
+            <img src="img/feature-picture.jpg" width="800" height="256" alt="Фотография города Седона">
             <ul class="advantage-sublist list-style">
               <li>
-
                 <h3>Жильё</h3>
                 <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
               <li>
-
                 <h3>Еда</h3>
                 <p>Всегда заказывайте фирмерный бургер, Вы не разочаруетесь!</p>
               </li>
               <li>
-
                 <h3>Сувениры</h3>
                 <p>Не только китайского, но и местного производства</p>
               </li>
@@ -84,28 +81,34 @@
           </li>
         </ul>
       </section>
+
+
       <section class="search-hotel">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостинниц в Седоне</p>
-        <button class="head-form" type="button"> Поиск гостинницы в Седоне</button>
+        <a class="head-form" type="button"> Поиск гостинницы в Седоне</a>
         <form class="form-search" method="get" action="https://echo.htmlacademy.ru">
-          <div class="date-of-arrival">
+          <div class="column">
             <label  for="dateOfArrival">Дата заезда:</label>
             <input  type="date" name="date-of-arrival" id="dateOfArrival">
           </div>
-          <div>
+          <div class="column">
             <label for="dateOfDeparture">Дата выезда:</label>
             <input type="date" name="date-of-departure" id="dateOfDeparture">
           </div>
-          <div>
-            <label for="numbe-of-adults">Взрослые</label>
-            <button class="button-minus" type="button"> - </button>
-            <input type="number" name="numbe-of-adults" id="numbeOfAdults" min="0" value="0">
-            <button class="button-plus" type="button"> + </button>
-            <label for="numbe-of-child">Дети</label>
-            <button class="button-minus" type="button"> - </button>
-            <input type="number" name="numbe-of-child" id="numbeOfChild" min="0" value="0">
-            <button class="button-plus" type="button"> + </button>
+          <div class="column">
+            <div>
+              <label for="number-of-adults">Взрослые</label>
+             <button class="button-minus" type="button"> - </button>
+              <input type="number" name="numbe-of-adults" id="numbeOfAdults" min="0" value="0">
+              <button class="button-plus" type="button"> + </button>
+            </div>
+            <div>
+              <label for="numbe-of-child">Дети</label>
+              <button class="button-minus" type="button"> - </button>
+              <input type="number" name="numbe-of-child" id="numbeOfChild" min="0" value="0">
+              <button class="button-plus" type="button"> + </button>
+            </div>
           </div>
           <button class="button-form" type="submit">Найти</button>
         </form>
