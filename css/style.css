@@ -1,7 +1,5 @@
 /*глобальные стили*/
-*{
-  outline: 1px solid red;
-}
+
 body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -551,8 +549,7 @@ background-color: rgba(255, 255, 255, 0);
   }
 
   .form_price{
-  margin-left: 300px;
-
+  margin-left: 270px;
 }
 
 .check ul{
@@ -572,30 +569,45 @@ background-color: rgba(255, 255, 255, 0);
   color: #ffffff;
 }
 
+input[type="checkbox"] {
+  display: none;
+ }
+
+
+
 .check label {
+  display: inline-block;
   font-size: 14px;
   font-weight: 400;
-  text-align: left;
   color: #ffffff;
   margin-left: 13px;
+}
+.check svg {
+  vertical-align: middle;
 }
 
 .price-min-max input[type="text"] {
   margin-top: -10px;
+  padding-left: 5px;
 
   font-size: 14px;
   font-weight: 700;
   color: #ffffff;
   text-align: left;
+  width: 100px;
 
   background-color: rgba(255, 255, 255, 0);
   border: none;
+  border-right: 1px solid white;
 }
 
 .price-min-max {
   margin-top: -20px;
+  margin-right: 50px;
   border: 2px solid #ffffff;
   border-radius: 5px;
+  width: 314px;
+  height: 32px;
 }
 
 .button-filter {
@@ -656,6 +668,20 @@ background-color: rgba(255, 255, 255, 0);
   display: flex;
   justify-content: flex-end;
   margin-right: 0px;
+}
+
+.ascending-descending path {
+  fill: #cacaca;
+}
+.list-sorting-active-link path {
+  fill: #81b3d2;
+}
+
+.ascending-descending a:hover path {
+  fill: #000000;
+}
+.ascending-descending a:active path {
+  fill: #81b3d2;
 }
 
 .list-sorting a {
@@ -773,11 +799,27 @@ a.list-sorting-active-link {
   justify-content: flex-end;
   min-height: 90px;
 }
+.average {
+  background-image:  url("../img/svg-sedona/star.svg"), url("../img/svg-sedona/star.svg"), url("../img/svg-sedona/star.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 0px, 75% 0px, 50% 0px;
+}
+.good {
+  background-image: url("../img/svg-sedona/star.svg"), url("../img/svg-sedona/star.svg"), url("../img/svg-sedona/star.svg"), url("../img/svg-sedona/star.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 0px, 75% 0px, 50% 0px, 25% 0px;
+}
+.bad {
+  background-image: url("../img/svg-sedona/star.svg"), url("../img/svg-sedona/star.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 0px, 75% 0px;
+}
 
 .rating p{
   align-self: flex-end;
   margin: 0px;
   padding-right: 13px;
+  padding-left: 16px;
 
 
   line-height: 21px;
