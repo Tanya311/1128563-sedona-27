@@ -188,7 +188,23 @@ a {
 .advantage-sublist h3 {
   margin-bottom: 26px;
 }
+.house {
+  background-image: url('../img/svg-sedona/house.svg');
+  background-repeat: no-repeat;
+  background-position: center 50px;
+}
 
+.eat {
+  background-image: url('../img/svg-sedona/eat.svg');
+  background-repeat: no-repeat;
+  background-position: center 50px;
+}
+
+.souvenirs {
+  background-image: url('../img/svg-sedona/souvenirs.svg');
+  background-repeat: no-repeat;
+  background-position: center 50px;
+}
 /*стилилизация формы*/
 .search-hotel h2 {
   font-size: 30px;
@@ -284,7 +300,8 @@ margin-right: auto;
   text-align: left;
 
   background-color: #f2f2f2;
-  border: none
+  border: none;
+
 }
 
 .column input[type="number"] {
@@ -302,7 +319,26 @@ margin-right: auto;
   vertical-align: bottom;
 
   background-color: #f2f2f2;
-  border: none
+  border: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+  margin: 0;
+}
+
+input[type="date"]::-webkit-outer-spin-button,
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+  margin: 0;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator{
+  color: transparent;
+  opacity: 1;
+  background: url('../img/svg-sedona/calendar.svg') no-repeat center;
+  background-size: contain;
 }
 
 .button-plus {
@@ -420,11 +456,24 @@ margin-right: auto;
   font-size: 21px;
   text-align: left;
 }
-
+.footer-social{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 150px;
+}
 .social-button {
   color: white;
-
+  width: 46px;
+  height: 48px;
   background-color: #81b3d2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-button:active path {
+  opacity: 0.3;
 }
 
 .social-button:focus,
@@ -447,16 +496,15 @@ p.footer-copyright {
   font-weight: 400;
 }
 
-.footer-copyright a:focus,
-.footer-copyright a:hover  {
-  color: #81b3d2;
-  outline: none;
-  cursor: pointer;
+.footer-copyright a:hover path {
+  fill: #81b3d2;
 }
 
-.footer-copyright a:active {
-  color: #bdbbbc;
+.footer-copyright a:active path{
+  fill: #bdbbbc;
 }
+
+
 
 /* INNER PAGE*/
 
