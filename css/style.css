@@ -1,4 +1,7 @@
 /*глобальные стили*/
+*{
+  outline: 1px solid red;
+}
 body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -33,7 +36,7 @@ a {
   position: relative;
   margin-right: auto;
   margin-left: auto;
-  max-width: 1200px;
+  width: 1200px;
   box-shadow: 0px 0px 15px 7px rgba(0, 1, 1, 0.15);
 }
 
@@ -59,9 +62,20 @@ a {
   display: block;
   padding-top: 22px;
   padding-bottom: 22px;
-  padding-left: 72px;
-  padding-right: 72px;
+  padding-left: auto;
+  padding-right: auto;
   margin: 0px;
+}
+
+.site-navigation li {
+  width: 240px;
+}
+
+.site-navigation li:nth-child(2) {
+  margin-right: 100px;
+}
+.site-navigation li:nth-child(23) {
+  margin-left: 50px;
 }
 
 .site-navigation a:focus,
@@ -85,7 +99,7 @@ a {
 
   background-color: #2f9aa3;
   background-image: url("../img/svg-sedona/intro-mask.svg"), url("../img/svg-sedona/intro-welcome.svg"), url("../img/background-photo.jpg");
-  background-size: 1200px 59px, 459px 353px, cover;
+  background-size: contain, 459px 353px, cover;
   background-repeat: no-repeat;
   background-position: right 0px top 450px, right 50% top 22%, 100%;
 }
@@ -149,7 +163,7 @@ a {
 }
 
 .advantage-item-whith-photo div{
-  max-width: 400px;
+  width: 400px;
   box-sizing: border-box;
   padding-left: 48px;
   padding-top: 25px;
@@ -163,10 +177,12 @@ a {
 }
 
 .advantage-sublist li{
+  width: 400px;
   padding-top: 140px;
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 73px;
+  box-sizing: border-box;
 }
 
 .advantage-sublist h3 {
@@ -206,15 +222,12 @@ a {
 }
 
 .form-search {
-  display: none;
-  position: absolute;
-  top: 2195px;
-  left: 316px;
-  z-index: 10;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
+  margin-left: auto;
+margin-right: auto;
   width: 568px;
   padding: 55px;
   box-sizing: border-box;
@@ -389,6 +402,12 @@ a {
   background-color: #5496bd;
 }
 
+.map {
+  margin-top: -396px;
+  z-index: -10;
+  position: relative;
+}
+
 /*стилилизация подвала*/
 .footer {
   background-color: rgba(255, 255, 255, 0.9);
@@ -478,11 +497,15 @@ background-color: rgba(255, 255, 255, 0);
 
 .form fieldset {
   margin-left: 65px;
-  margin-right: 30px;
   padding-top: 31px;
 
   border: none;
   }
+
+  .form_price{
+  margin-left: 300px;
+
+}
 
 .check ul{
  display: flex;
@@ -566,7 +589,8 @@ background-color: rgba(255, 255, 255, 0);
 }
 .sorting h3 {
   font-size: 21px;
-  margin-right: 49px;
+  margin-right: 30px;
+  width: 130px;
 }
 
 .sorting h4 {
@@ -578,7 +602,6 @@ background-color: rgba(255, 255, 255, 0);
 .list-sorting {
   flex-grow: 1;
   display: flex;
-  justify-content: flex-start;
 }
 
 .ascending-descending {
@@ -590,7 +613,6 @@ background-color: rgba(255, 255, 255, 0);
 .list-sorting a {
   font-size: 12px;
   letter-spacing: normal;
-  line-height: 18px;
   font-weight: 400;
   margin-right: 40px;
   color: rgba(0, 0, 0, 0.3);
@@ -632,7 +654,8 @@ a.list-sorting-active-link {
   font-size: 21px;
   letter-spacing: normal;
   text-align: left;
-  width: 310px;
+  margin: 0px;
+
 
   color: #000000;
 }
@@ -662,17 +685,22 @@ a.list-sorting-active-link {
 .column-2 {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 .column-2 p{
   margin-top: 6px;
   margin-bottom: 7px;
+}
+
+.hotel-type p:nth-child(2) {
   margin-right: 75px;
 }
 
 .column-2 div {
   display: flex;
   justify-content: space-between;
+  width: 260px;
 }
 
 
@@ -692,7 +720,7 @@ a.list-sorting-active-link {
 .rating {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+
   align-items: flex-end;
   justify-content: flex-end;
   min-height: 90px;
@@ -718,7 +746,7 @@ a.list-sorting-active-link {
   padding-top: 8px;
   padding-right: 17px;
   padding-left: 17px;
-  margin-right: 30px;
+  margin-right: 8px;
 
 
   line-height: 21px;
