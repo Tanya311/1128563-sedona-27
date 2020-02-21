@@ -653,6 +653,7 @@ background-color: rgba(255, 255, 255, 0);
   color: #ffffff;
 }
 
+
 .check input[type="checkbox"] {
   position: absolute;
   -webkit-appearance: none;
@@ -660,22 +661,24 @@ background-color: rgba(255, 255, 255, 0);
   appearance: none;
  }
 
- .check__option__box {
-   position: absolute;
-   margin-left: -40px;
-   width: 29px;
-   height: 25px;
-   background-image: url("../img/svg-sedona/checkbox-off.svg");
-   background-repeat: no-repeat;
- }
 
- .check__option__input:checked + .check__option__box {
+ .check__option::before {
+  content: '';
+  position: absolute;
+  margin-left: -40px;
+  width: 29px;
+  height: 25px;
+  background-image: url("../img/svg-sedona/checkbox-off.svg");
+  background-repeat: no-repeat;
+}
+
+ .check__option__input:checked ~ .check__option::before {
   background-image: url("../img/svg-sedona/checkbox-on.svg");
   background-repeat: no-repeat;
 }
 
-.check__option__input:disabled + .check__option__box {
-  background-image: url("../img/svg-sedona/checkbox-on.svg");
+.check__option__input:disabled ~ .check__option::before {
+  background-image: url("../img/svg-sedona/checkbox-off.svg");
   background-repeat: no-repeat;
   opacity: 0.3;
 }
