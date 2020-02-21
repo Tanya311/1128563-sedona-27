@@ -1,7 +1,5 @@
 /*глобальные стили*/
-* {
-  outline: 1px solid red;
-}
+
 
 body {
   font-family: "PT Sans", Arial, sans-serif;
@@ -121,7 +119,7 @@ a {
   background-image: url("../img/svg-sedona/intro-mask.svg"), url("../img/svg-sedona/intro-welcome.svg"), url("../img/background-photo.jpg");
   background-size: contain, 459px 353px, cover;
   background-repeat: no-repeat;
-  background-position: right 0px top 450px, right 50% top 22%, 100%;
+  background-position: right 0px top 450px, right 50% top 50%, right 100% top -80px;
 }
 .description {
   padding-left: 350px;
@@ -209,8 +207,8 @@ a {
   width: 400px;
   min-height: 330px;
   padding-top: 140px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 50px;
+  padding-right: 50px;
 
   box-sizing: border-box;
 
@@ -249,12 +247,13 @@ a {
 }
 
 .search-hotel p {
-  width: 434px;
+  width: 460px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 52px;
+  margin-bottom: 48px;
 
   font-size: 14px;
+  line-height: 24px;
   color: #333333;
   font-weight: 400;
 }
@@ -289,11 +288,12 @@ a {
   margin-right: auto;
   margin-bottom: 78px;
   width: 568px;
-  padding: 55px;
+  padding: 57px;
   box-sizing: border-box;
 
   background-color: #ffffff;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+  position: relative;
 }
 
 .search-hotel__form .search-form__column {
@@ -372,8 +372,29 @@ a {
 .search-form__column input[type="date"]::-webkit-calendar-picker-indicator{
   color: transparent;
   opacity: 1;
-  background: url('../img/svg-sedona/calendar.svg') no-repeat center;
-  background-size: contain;
+}
+
+.calendar {
+  position: absolute;
+  left: 480px;
+  padding: 2px 5px;
+  cursor: pointer;
+}
+
+.calendar svg{
+vertical-align: middle;
+}
+
+.calendar path {
+  fill: #a9a9a9;
+}
+
+.calendar:hover path {
+  fill: #000000;
+}
+
+.calendar:active path {
+  fill: #81b3d2;
 }
 
 .button-plus {
