@@ -45,7 +45,7 @@ a {
   background-color: #ffffff;
 }
 
-.navigation__logo {
+.logo {
   position: absolute;
   left: 50%;
   top: 0;
@@ -107,7 +107,7 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.active-link {
+.navigation__link--active {
   color: #766357;
 }
 
@@ -196,14 +196,14 @@ a {
   padding-right: 49px;
 }
 
-.advantage-sublist {
+.advantage__sublist {
   color: #000000;
   background-color: #ffffff;
   display: flex;
 
 }
 
-.advantage-sublist li{
+.advantage__sub-itom{
   width: 400px;
   min-height: 330px;
   padding-top: 140px;
@@ -211,25 +211,24 @@ a {
   padding-right: 50px;
 
   box-sizing: border-box;
-
 }
 
-.advantage-sublist h3 {
+.advantage__sublist h3 {
   margin-bottom: 26px;
 }
-.house {
+.advantage__sub-itom--house {
   background-image: url('../img/svg-sedona/house.svg');
   background-repeat: no-repeat;
   background-position: center 56px;
 }
 
-.eat {
+.advantage__sub-itom--eat {
   background-image: url('../img/svg-sedona/eat.svg');
   background-repeat: no-repeat;
   background-position: center 57px;
 }
 
-.souvenirs {
+.advantage__sub-itom--souvenirs {
   background-image: url('../img/svg-sedona/souvenirs.svg');
   background-repeat: no-repeat;
   background-position: center 53px;
@@ -258,7 +257,7 @@ a {
   font-weight: 400;
 }
 
-.head-form {
+.search-hotel__head-form {
   display: inline-block;
   width: 568px;
 
@@ -279,7 +278,7 @@ a {
   border: none;
 }
 
-.search-hotel__form {
+.search-form {
 
   display: flex;
   flex-wrap: wrap;
@@ -296,7 +295,8 @@ a {
   position: relative;
 }
 
-.search-hotel__form .search-form__column {
+.search-form__date,
+.search-form__number-of-guests {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -307,16 +307,17 @@ a {
   font-size: 0px;
 }
 
-.search-hotel__form label {
+.search-form label {
   font-family:inherit;
   font-size: 14px;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
   text-align: left;
+  cursor: pointer;
 }
 
-.search-form__column  input[type="date"] {
+.search-form__date  input[type="date"] {
   width: 346px;
   min-height: 38px;
   font-size: 14px;
@@ -335,7 +336,7 @@ a {
 
 }
 
-.search-form__column input[type="number"] {
+.search-form__number-of-guests input[type="number"] {
   width: 38px;
   height: 38px;
   padding: 0px;
@@ -353,51 +354,51 @@ a {
   border: none;
 }
 
-.search-form__column input[type="number"]::-webkit-outer-spin-button,
-.search-form__column input[type="number"]::-webkit-inner-spin-button {
+.search-form__number-of-guests input[type="number"]::-webkit-outer-spin-button,
+.search-form__number-of-guests input[type="number"]::-webkit-inner-spin-button {
   position: absolute;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 
-.search-form__column input[type="date"]::-webkit-outer-spin-button,
-.search-form__column input[type="date"]::-webkit-inner-spin-button {
+.search-form__date input[type="date"]::-webkit-outer-spin-button,
+.search-form__date input[type="date"]::-webkit-inner-spin-button {
   position: absolute;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 
-.search-form__column input[type="date"]::-webkit-calendar-picker-indicator{
+.search-form__date input[type="date"]::-webkit-calendar-picker-indicator{
   color: transparent;
   opacity: 1;
 }
 
-.calendar {
+.search-form__calendar {
   position: absolute;
   left: 480px;
   padding: 2px 5px;
   cursor: pointer;
 }
 
-.calendar svg{
+.search-form__calendar svg{
 vertical-align: middle;
 }
 
-.calendar path {
+.search-form__calendar path {
   fill: #a9a9a9;
 }
 
-.calendar:hover path {
+.search-form__calendar:hover path {
   fill: #000000;
 }
 
-.calendar:active path {
+.search-form__calendar:active path {
   fill: #81b3d2;
 }
 
-.button-plus {
+.search-form__button-plus {
   width: 38px;
   height: 38px;
 
@@ -410,7 +411,7 @@ vertical-align: middle;
   border: none;
 }
 
-.button-minus {
+.search-form__button-minus {
   width: 38px;
   height: 38px;
   font-size: 21px;
@@ -423,7 +424,7 @@ vertical-align: middle;
   border: none;
 }
 
-.button-form {
+.search-form__button-form {
   width: 458px;
   height: 58px;
   margin-top: 24px;
@@ -436,8 +437,8 @@ vertical-align: middle;
   border: none;
 }
 
-.head-form:focus,
-.head-form:hover  {
+.search-hotel__head-form:focus,
+.search-hotel__head-form:hover  {
   color: white;
   background-color: #604e43;
   outline: none;
@@ -445,52 +446,52 @@ vertical-align: middle;
 }
 
 
-.head-form:active {
+.search-hotel__head-form:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
 
-.search-hotel__form input[type="number"]:hover  {
+.search-form input[type="number"]:hover  {
   background-color: #ebebeb;
   cursor: pointer;
 }
 
-.search-hotel__forminput[type="number"]:focus {
+.search-form input[type="number"]:focus {
   background-color: #ffffff;
   border: inside 2px solid #e5e5e5;
 }
 
-.search-hotel__form input[type="date"]:hover  {
+.search-form input[type="date"]:hover  {
   background-color: #ebebeb;
   cursor: pointer;
 }
 
-.search-hotel__form input[type="date"]:focus {
+.search-form input[type="date"]:focus {
   background-color: #ffffff;
   border: inside 2px solid #e5e5e5;
 }
 
-.button-plus:hover,
-.button-minus:hover {
+.search-form__button-plus:hover,
+.search-form__button-minus:hover {
   color: #000000;
   cursor: pointer;
 }
 
-.button-plus:focus,
-.button-minus:focus {
+.search-form__button-plus:focus,
+.search-form__button-minus:focus {
   color: #81b3d2;
   outline: none;
 }
 
-.button-form:focus,
-.button-form:hover  {
+.search-form__button-form:focus,
+.search-form__button-form:hover  {
   color: white;
   background-color: #669ec0;
   outline: none;
   cursor: pointer;
 }
 
-.button-form:active {
+.search-form__button-form:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
@@ -925,7 +926,6 @@ a.sorting__list--active {
   text-align: left;
   margin: 0px;
 
-
   color: #000000;
 }
 
@@ -1013,15 +1013,12 @@ a.sorting__list--active {
 .rating p{
   align-self: flex-end;
   margin: 0px;
-
-      padding-right: 18px;
-      padding-left: 16px;
-      padding-top: 7px;
-      line-height: 21px;
-      font-weight: 400;
-      text-align: right;
-      color: #666666;
-      background-color: #f2f2f2;
+  padding: 3px 17px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: right;
+  color: #666666;
+  background-color: #f2f2f2;
 }
 
 .button-hotel-detail {
