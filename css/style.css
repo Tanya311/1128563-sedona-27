@@ -595,7 +595,7 @@ vertical-align: middle;
 
 /*форма*/
 
-.form-filter-hotel{
+.form-filter {
   min-height: 217px;
 
   background-color: #6799a2;
@@ -605,7 +605,7 @@ vertical-align: middle;
   background-position: 100%;
 }
 
-.form  {
+.form-filter {
 display: flex;
 justify-content: space-between;
 
@@ -618,17 +618,17 @@ border: none;
 background-color: rgba(255, 255, 255, 0);
 }
 
-.check {
+.form-filter__checkbox {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.check li {
+.form-filter__checkbox li {
   margin-bottom: 23px;
 }
 
-.form fieldset {
+.form-filter fieldset {
   margin-left: 62px;
   padding-top: 31px;
   height: 76px;
@@ -636,14 +636,14 @@ background-color: rgba(255, 255, 255, 0);
   border: none;
 }
 
-.form__price{
+.form-filter__price {
   margin-left: 232px;
   margin-right: 63px;
   height: 180px;
 
 }
 
-.check ul{
+.form-filter__checkbox ul{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -652,7 +652,7 @@ background-color: rgba(255, 255, 255, 0);
   margin-bottom: 0px;
 }
 
-.form legend {
+.form-filter legend {
   font-size: 16px;
   letter-spacing: normal;
   text-align: left;
@@ -660,7 +660,7 @@ background-color: rgba(255, 255, 255, 0);
 }
 
 
-.check input[type="checkbox"] {
+.form-filter__checkbox input[type="checkbox"] {
   position: absolute;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -668,7 +668,7 @@ background-color: rgba(255, 255, 255, 0);
  }
 
 
- .check__option::before {
+ .form-filter__label::before {
   content: '';
   position: absolute;
   margin-left: -40px;
@@ -678,32 +678,27 @@ background-color: rgba(255, 255, 255, 0);
   background-repeat: no-repeat;
 }
 
- .check__option__input:checked ~ .check__option::before {
+ .form-filter__input:checked ~ .form-filter__label::before {
   background-image: url("../img/svg-sedona/checkbox-on.svg");
   background-repeat: no-repeat;
 }
 
-.check__option__input:disabled ~ .check__option::before {
+.form-filter__input:disabled ~ .form-filter__label::before {
   background-image: url("../img/svg-sedona/checkbox-off.svg");
   background-repeat: no-repeat;
   opacity: 0.3;
 }
 
+.form-filter__label {
+  padding-left: 25px;
 
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-left: 13px;
+}
 
- .check__option {
-   padding-left: 25px;
-
-   font-size: 14px;
-   font-weight: 400;
-   color: #ffffff;
-   margin-left: 13px;
-  }
-
-
-
-
-.price-min-max input {
+.form-filter__price-min-max input {
   width: 50px;
   margin: 0px;
 
@@ -714,7 +709,7 @@ background-color: rgba(255, 255, 255, 0);
   border: none;
 }
 
-.price-min-max {
+.form-filter__price-min-max {
   position: relative;
 
   height: 31px;
@@ -727,7 +722,7 @@ background-color: rgba(255, 255, 255, 0);
   border-radius: 2px;
 }
 
-.price-min-max::after {
+.form-filter__price-min-max::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -740,7 +735,7 @@ background-color: rgba(255, 255, 255, 0);
   background: #ffffff;
 }
 
-.price-min-max label {
+.form-filter__price-min-max label {
   display: inline-block;
 
   font-size: 14px;
@@ -751,21 +746,20 @@ background-color: rgba(255, 255, 255, 0);
   cursor: pointer;
 }
 
-.price-min-max .min-price,
-.price-min-max .max-price {
+.form-filter__min-price,
+.form-filter__max-price {
   width: 90px;
 }
 
-.price-min-max .min-price {
+.form-filter__min-price {
   padding-left: 55px;
   padding-right: 10px;
 }
 
-.price-min-max .max-price {
+.form-filter__max-price{
   padding-left: 44px;
   padding-right: 18px;
 }
-
 
 .range-controls {
   position: relative;
@@ -773,20 +767,20 @@ background-color: rgba(255, 255, 255, 0);
   margin-bottom: 32px;
 }
 
-.range-controls .scale {
+.range-controls__scale {
   height: 2px;
 
   background: rgba(255, 255, 255, 0.3);
 }
 
-.range-controls .bar {
+.range-controls__bar {
   width: 80%;
   height: 2px;
 
   background: #ffffff;
 }
 
-.range-toggle {
+.range-controls__toggle {
   position: absolute;
   top: -9px;
 
@@ -800,19 +794,19 @@ background-color: rgba(255, 255, 255, 0);
   cursor: pointer;
 }
 
-.range-toggle-min {
+.range-controls__toggle--min {
   left: 0;
 }
 
-.range-toggle-max {
+.range-controls__toggle--max {
   left: 80%;
 }
 
-.range-toggle:hover {
+.range-controls__toggle:hover {
   background: #1c4f80;
 }
 
-.button-filter {
+.form-filter__button {
   padding: 11px 35px;
   margin-left: 50px;
 
@@ -828,8 +822,8 @@ background-color: rgba(255, 255, 255, 0);
   border-radius: 5px;
 }
 
-.button-filter:focus,
-.button-filter:hover {
+.form-filter__button:focus,
+.form-filter__button:hover {
   background-color: #ffffff;
   font-weight: 400;
   color: #000000;
@@ -886,7 +880,7 @@ background-color: rgba(255, 255, 255, 0);
   fill: #81b3d2;
 }
 
-.sorting__list a {
+.sorting__item {
   font-size: 12px;
   letter-spacing: normal;
   font-weight: 400;
@@ -895,7 +889,7 @@ background-color: rgba(255, 255, 255, 0);
   border-bottom: 1px dotted #81b3d2;
 }
 
-.sorting__ascending-descending a {
+.sorting__button {
   font-size: 12px;
   letter-spacing: normal;
   line-height: 18px;
@@ -904,28 +898,30 @@ background-color: rgba(255, 255, 255, 0);
   color: rgba(0, 0, 0, 0.3);
 }
 
-.sorting__list a:focus,
-.sorting__list a:hover,
-.sorting__ascending-descending a:focus,
-.sorting__ascending-descending a:hover {
+.sorting__item:focus,
+.sorting__item:hover,
+.sorting__button:focus,
+.sorting__button:hover {
   color: #81b3d2;
   outline: none;
   cursor: pointer;
 }
 
-.sorting__list a:active,
-.sorting__aascending-descending a:active {
+.sorting__item:active,
+.sorting__button:active {
   color: #000000;
   border: none;
 }
 
-a.sorting__list--active {
+.sorting__item--active,
+.sorting__button--active path{
   color: #81b3d2;
+  fill: #81b3d2;
   border: none;
 }
 
 /*список отелей*/
-.hotel-name {
+.hotel-list__name {
   font-size: 21px;
   letter-spacing: normal;
   text-align: left;
@@ -934,14 +930,14 @@ a.sorting__list--active {
   color: #000000;
 }
 
-.hotel-name:focus,
-.hotel-name:hover {
+.hotel-list__name:focus,
+.hotel-list__name:hover {
   color: #81b3d2;
   outline: none;
   cursor: pointer;
 }
 
-.hotel-name:active {
+.hotel-list__name:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -956,33 +952,29 @@ a.sorting__list--active {
 .hotel-list img {
   margin-right: 33px;
 }
-.column-2 {
+.hotel-list__info {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
 
-.column-2 p{
+.hotel-list__info p{
   margin-top: 6px;
   margin-bottom: 7px;
 }
 
-.hotel-type p:nth-child(2) {
+.hotel-list__type p:nth-child(2) {
   margin-right: 78px;
 }
 
-.column-2 div {
+.hotel-list__info div {
   display: flex;
   justify-content: space-between;
   width: 260px;
 }
 
 
-.border {
-  border-top: 1px solid rgba(0, 1, 1, 0.2);
-}
-
-.hotel-list article{
+.hotel-list article {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -991,7 +983,11 @@ a.sorting__list--active {
   border-bottom: 1px solid rgba(0, 1, 1, 0.2);
 }
 
-.rating {
+.hotel-list article:first-of-type {
+  border-top: 1px solid rgba(0, 1, 1, 0.2);
+}
+
+.hotel-list__rating {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -999,23 +995,23 @@ a.sorting__list--active {
   min-height: 90px;
   padding-left: 6px;
 }
-.average {
+.hotel-list__rating--average {
   background-image:  url("../img/svg-sedona/star.svg"), url("../img/svg-sedona/star.svg"), url("../img/svg-sedona/star.svg");
   background-repeat: no-repeat;
   background-position: 100% 0px, 75% 0px, 50% 0px;
 }
-.good {
+.hotel-list__rating--good {
   background-image: url("../img/svg-sedona/star.svg"), url("../img/svg-sedona/star.svg"), url("../img/svg-sedona/star.svg"), url("../img/svg-sedona/star.svg");
   background-repeat: no-repeat;
   background-position: 100% 0px, 75% 0px, 50% 0px, 25% 0px;
 }
-.bad {
+.hotel-list__rating--bad {
   background-image: url("../img/svg-sedona/star.svg"), url("../img/svg-sedona/star.svg");
   background-repeat: no-repeat;
   background-position: 100% 0px, 75% 0px;
 }
 
-.rating p{
+.hotel-list__rating p{
   align-self: flex-end;
   margin: 0px;
   padding: 3px 17px;
@@ -1026,7 +1022,7 @@ a.sorting__list--active {
   background-color: #f2f2f2;
 }
 
-.button-hotel-detail {
+.hotel-list__button-detail {
 
   padding-top: 3px;
   padding-right: 17px;
@@ -1039,20 +1035,20 @@ a.sorting__list--active {
   background-color: #81b3d2;
 }
 
-.button-hotel-detail:focus,
-.button-hotel-detail:hover {
+.hotel-list__button-detail:focus,
+.hotel-list__button-detail:hover {
   background-color: #669ec0;
   outline: none;
   cursor: pointer;
 }
 
-.button-hotel-detail:active {
+.hotel-list__button-detail:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 
 
-.button-hotel-booking {
+.hotel-list__button-booking {
   line-height: 21px;
   letter-spacing: normal;
   color: #ffffff;
@@ -1066,14 +1062,14 @@ a.sorting__list--active {
   background-color: #766357;
 }
 
-.button-hotel-booking:focus,
-.button-hotel-booking:hover {
+.hotel-list__button-booking:focus,
+.hotel-list__button-booking:hover {
   background-color: #604e43;
   outline: none;
   cursor: pointer;
 }
 
-.button-hotel-booking:active {
+.hotel-list__button-booking:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
