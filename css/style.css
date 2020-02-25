@@ -50,6 +50,7 @@ a {
   left: 50%;
   top: 0;
   transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
 }
 
 .navigation__list {
@@ -78,9 +79,6 @@ a {
 }
 
 
-
-
-
 .navigation__list li:nth-child(2) {
   margin-right: 50px;
   text-align: start;
@@ -93,8 +91,6 @@ a {
 .navigation__list a:nth-child(2) {
   padding-left: 40px;
 }
-
-
 
 
 .navigation__list a:focus,
@@ -317,7 +313,7 @@ a {
   cursor: pointer;
 }
 
-.search-form__date  input[type="date"] {
+.search-form__date  input[type="text"] {
   width: 346px;
   min-height: 38px;
   font-size: 14px;
@@ -327,13 +323,26 @@ a {
   font-family:inherit;
   line-height: inherit;
   font-weight: inherit;
-  color: inherit;
   text-transform: inherit;
   text-align: left;
 
   background-color: #f2f2f2;
   border: none;
 
+}
+
+.search-form__date  input[type="text"]::-webkit-input-placeholder {
+  color: #000000;
+}
+
+.search-form__date  input[type="text"]::-moz-placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.search-form__date  input[type="text"]:-ms-input-placeholder {
+  color: #000000;
+  opacity: 1;
 }
 
 .search-form__number-of-guests input[type="number"] {
@@ -357,29 +366,23 @@ a {
 .search-form__number-of-guests input[type="number"]::-webkit-outer-spin-button,
 .search-form__number-of-guests input[type="number"]::-webkit-inner-spin-button {
   position: absolute;
+  appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  appearance: none;
 }
 
-.search-form__date input[type="date"]::-webkit-outer-spin-button,
-.search-form__date input[type="date"]::-webkit-inner-spin-button {
-  position: absolute;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+.search-form__number-of-guests input[type="number"] {
+  -moz-appearance:textfield;
 }
 
-.search-form__date input[type="date"]::-webkit-calendar-picker-indicator{
-  color: transparent;
-  opacity: 1;
-}
+
 
 .search-form__calendar {
   position: absolute;
   left: 480px;
   padding: 2px 5px;
   cursor: pointer;
+  border: none;
 }
 
 .search-form__calendar svg{
@@ -461,12 +464,12 @@ vertical-align: middle;
   border: inside 2px solid #e5e5e5;
 }
 
-.search-form input[type="date"]:hover  {
+.search-form input[type="text"]:hover  {
   background-color: #ebebeb;
   cursor: pointer;
 }
 
-.search-form input[type="date"]:focus {
+.search-form input[type="text"]:focus {
   background-color: #ffffff;
   border: inside 2px solid #e5e5e5;
 }
@@ -727,6 +730,7 @@ background-color: rgba(255, 255, 255, 0);
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 
   width: 2px;
@@ -838,11 +842,11 @@ background-color: rgba(255, 255, 255, 0);
   justify-content: space-between;
   align-items: center;
   padding-left: 67px;
-    padding-bottom: 10px;
-    padding-right: 70px;
-    padding-top: 10px;
-
+  padding-bottom: 10px;
+  padding-right: 70px;
+  padding-top: 10px;
 }
+
 .sorting h3 {
   font-size: 21px;
   margin-right: 39px;
