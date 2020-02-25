@@ -1,5 +1,3 @@
-
-
 var buttonOpenForm = document.querySelector('.popup-open');
 var popup = document.querySelector('.search-form');
 var numberOfAdults = popup.querySelector('[name=number-of-adults]');
@@ -12,13 +10,12 @@ var isStorageSupport = true;
 var storageAdults = "";
 var storageChildren = "";
 
-  try {
-    storageAdults = localStorage.getItem('number-of-adults');
-    storageChildren = localStorage.getItem('number-of-child');
-  } catch (err) {
-    isStorageSupport = false;
-  }
-
+try {
+  storageAdults = localStorage.getItem('number-of-adults');
+  storageChildren = localStorage.getItem('number-of-child');
+} catch (err) {
+  isStorageSupport = false;
+}
 
 buttonOpenForm.addEventListener("click", function (evt) {
   popup.classList.toggle('search-form--open');
@@ -30,7 +27,6 @@ buttonOpenForm.addEventListener("click", function (evt) {
   if (storageChildren) {
     numberOfChild.value = storageChildren;
   }
-
 });
 
 
@@ -56,4 +52,3 @@ popup.addEventListener('submit', function (evt) {
     }
   }
 });
-
