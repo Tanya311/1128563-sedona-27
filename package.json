@@ -1,0 +1,19 @@
+{
+  "name": "1128563-sedona-27",
+  "version": "1.0.0",
+  "description": "* Студент: [Татьяна Степина](https://up.htmlacademy.ru/htmlcss/27/user/1128563). * Наставник: [Антон Попов] (https://htmlacademy.ru/profile/joker).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tanya311/1128563-sedona-27.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tanya311/1128563-sedona-27/issues"
+  },
+  "homepage": "https://github.com/Tanya311/1128563-sedona-27#readme"
+}
