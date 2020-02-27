@@ -1,14 +1,16 @@
+var KEY_CODE_ESC = 27;
 var buttonOpenForm = document.querySelector('.popup-open');
 var popup = document.querySelector('.search-form');
 var numberOfAdults = popup.querySelector('[name=number-of-adults]');
 var numberOfChild = popup.querySelector('[name=number-of-child]');
 var dateOfArrival = popup.querySelector('[name=date-of-arrival]');
 var dateOfDeparture = popup.querySelector('[name=date-of-departure]');
-popup.classList.add('search-form--close');
 
 var isStorageSupport = true;
-var storageAdults = "";
-var storageChildren = "";
+var storageAdults = '';
+var storageChildren = '';
+
+popup.classList.add('search-form--close');
 
 try {
   storageAdults = localStorage.getItem('number-of-adults');
@@ -17,10 +19,13 @@ try {
   isStorageSupport = false;
 }
 
-buttonOpenForm.addEventListener("click", function (evt) {
+buttonOpenForm.addEventListener('click', function (evt) {
   popup.classList.toggle('search-form--open');
-  dateOfArrival.focus();
+  popup.classList.toggle('search-form--close');
   popup.classList.remove('search-form--error');
+  if (popup.classList.contains('search-form--open')) {
+    dateOfArrival.focus();
+  }
   if (storageAdults) {
     numberOfAdults.value = storageAdults;
   }
@@ -29,15 +34,15 @@ buttonOpenForm.addEventListener("click", function (evt) {
   }
 });
 
-
 window.addEventListener('keydown', function (evt) {
-  if (evt.keyCode === 27) {
-    if (!popup.classList.contains('search-form--open')) {
-      popup.classList.add('search-form--open');
+  if (evt.keyCode === KEY_CODE_ESC) {
+    if (popup.classList.contains('search-form--open')) {
+      popup.classList.remove('search-form--open');
+      popup.classList.add('search-form--close');
+      popup.classList.remove('search-form--error');
     }
   }
 });
-
 
 popup.addEventListener('submit', function (evt) {
   if (!dateOfArrival.value || !dateOfDeparture.value || !numberOfAdults.value || !numberOfChild.value) {
