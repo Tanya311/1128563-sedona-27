@@ -708,6 +708,7 @@ vertical-align: middle;
   bottom: 0px;
   left: 0;
   z-index: 0;
+  vertical-align: baseline;
 
   border: none;
 }
@@ -1265,6 +1266,7 @@ vertical-align: middle;
 
 .hotel-list img {
   margin-right: 33px;
+  vertical-align: middle;
 }
 
 .hotel-list__info {
