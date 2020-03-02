@@ -96,7 +96,7 @@ a {
 }
 
 .navigation__list a:focus,
-.navigation__list a:hover  {
+.navigation__list a:hover {
   color: #81b3d2;
   outline: none;
 }
@@ -128,7 +128,7 @@ a {
 }
 
 .description h2 {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 
   font-size: 21px;
   line-height: 26px;
@@ -225,7 +225,7 @@ a {
   background-color: #ffffff;
 }
 
-.advantage__sublist li{
+.advantage__sublist li {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -243,7 +243,7 @@ a {
 }
 
 .advantage__sublist h3 {
-  margin-bottom: 26px;
+  margin-bottom: 25px;
 }
 
 .advantage__sub-itom--house {
@@ -267,11 +267,11 @@ a {
 /*стилилизация формы*/
 .search {
   margin-top: 0px;
-  padding-top: 17px;
+  padding-top: 15px;
 }
 
 .search-hotel {
-  min-height: 556px;
+  min-height: 558px;
 }
 
 .search h2 {
@@ -568,7 +568,7 @@ a {
   cursor: pointer;
 }
 
-.search-form__calendar svg{
+.search-form__calendar svg {
 vertical-align: middle;
 }
 
@@ -629,7 +629,7 @@ vertical-align: middle;
 }
 
 .search-hotel__head-form:focus,
-.search-hotel__head-form:hover  {
+.search-hotel__head-form:hover {
   color: white;
   background-color: #604e43;
   outline: none;
@@ -643,7 +643,7 @@ vertical-align: middle;
   padding-left: 0px;
 }
 
-.search-form input[type="number"]:hover  {
+.search-form input[type="number"]:hover {
   background-color: #ebebeb;
   cursor: pointer;
 }
@@ -655,7 +655,7 @@ vertical-align: middle;
   outline-color: #e5e5e5;
 }
 
-.search-form input[type="text"]:hover  {
+.search-form input[type="text"]:hover {
   background-color: #ebebeb;
   cursor: pointer;
 }
@@ -666,13 +666,16 @@ vertical-align: middle;
 }
 
 .search-form__button--plus:hover,
-.search-form__button--minus:hover {
+.search-form__button--plus:focus,
+.search-form__button--minus:hover,
+.search-form__button--minus:focus {
   color: #000000;
   cursor: pointer;
+  outline: none;
 }
 
-.search-form__button--plus:focus,
-.search-form__button--minus:focus {
+.search-form__button--plus:active,
+.search-form__button--minus:active {
   color: #81b3d2;
   outline: none;
   padding-right: 0px;
@@ -680,7 +683,7 @@ vertical-align: middle;
 }
 
 .search-form__button-form:focus,
-.search-form__button-form:hover  {
+.search-form__button-form:hover {
   color: white;
   background-color: #669ec0;
   outline: none;
@@ -703,7 +706,7 @@ vertical-align: middle;
   border: none;
 }
 
-.map img{
+.map img {
   position: absolute;
   bottom: 0px;
   left: 0;
@@ -721,7 +724,7 @@ vertical-align: middle;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 36px;
+  padding-top: 34px;
   padding-left: 132px;
   padding-right: 131px;
 
@@ -1194,7 +1197,8 @@ vertical-align: middle;
   fill: #81b3d2;
 }
 
-.sorting__button:hover path {
+.sorting__button:hover path,
+.sorting__button:focus path  {
   fill: #000000;
 }
 
@@ -1213,7 +1217,6 @@ vertical-align: middle;
   border-bottom: 1px dotted #81b3d2;
 }
 
-.sorting__item:focus,
 .sorting__item:hover,
 .sorting__button:focus,
 .sorting__button:hover {
@@ -1229,7 +1232,7 @@ vertical-align: middle;
 }
 
 .sorting__item--active,
-.sorting__button--active path{
+.sorting__button--active path {
   color: #81b3d2;
   fill: #81b3d2;
   border: none;
@@ -1282,13 +1285,18 @@ vertical-align: middle;
           flex-grow: 1;
 }
 
-.hotel-list__info p{
+.hotel-list__info p {
   margin-top: 8px;
   margin-bottom: 7px;
 }
 
+.hotel-list__type p:nth-child(1) {
+  width: 117px;
+  text-align: left;
+}
+
 .hotel-list__type p:nth-child(2) {
-  margin-right: 78px;
+  text-align: left;
 }
 
 .hotel-list__info div {
@@ -1297,7 +1305,7 @@ vertical-align: middle;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+
 
   width: 260px;
 }
@@ -1345,7 +1353,7 @@ vertical-align: middle;
   background-position: 100% 0px, 75% 0px;
 }
 
-.hotel-list__rating p{
+.hotel-list__rating p {
   margin: 0px;
   padding: 4px 16px;
 
@@ -1367,7 +1375,7 @@ vertical-align: middle;
 
 .hotel-list__button--detail {
   margin-top: 8px;
-  margin-right: 5px;
+  margin-right: 6px;
 
   background-color: #81b3d2;
 }
