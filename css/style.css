@@ -1,5 +1,6 @@
 /*глобальные стили*/
 
+
 body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -55,6 +56,7 @@ a {
 
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  vertical-align: middle;
 }
 
 .navigation__list {
@@ -367,11 +369,13 @@ a {
   0% {
     opacity: 0;
     padding: 0 57px;
+    visibility: hidden;
   }
 
   100% {
     opacity: 1;
     padding: 57px;
+    visibility: visible;
   }
 }
 
@@ -379,11 +383,13 @@ a {
   0% {
     opacity: 0;
     padding: 0 57px;
+    visibility: hidden;
   }
 
   100% {
     opacity: 1;
     padding: 57px;
+    visibility: visible;
   }
 }
 
@@ -391,11 +397,13 @@ a {
   0% {
     opacity: 1;
     padding: 57px;
+    visibility: visible;
   }
 
   100% {
     opacity: 0;
     padding: 0 57px;
+    visibility: hidden;
   }
 }
 
@@ -403,11 +411,13 @@ a {
   0% {
     opacity: 1;
     padding: 57px;
+    visibility: visible;
   }
 
   100% {
     opacity: 0;
     padding: 0 57px;
+    visibility: hidden;
   }
 }
 
@@ -438,7 +448,7 @@ a {
 .search-form--close {
   -webkit-animation: close 1s;
           animation: close 1s;
-  opacity: 0;
+  visibility: hidden;
 }
 
 .search-form--open {
@@ -513,6 +523,8 @@ a {
   width: 38px;
   height: 38px;
   padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 
   font-family:inherit;
   font-size: 14px;
@@ -594,7 +606,7 @@ vertical-align: middle;
   width: 38px;
   height: 38px;
 
-  font-size: 21px;
+  font-size: 24px;
   font-weight: 700;
   color: #cacaca;
 
@@ -605,13 +617,13 @@ vertical-align: middle;
 .search-form__button--plus {
   padding: 0px;
 
-  vertical-align: bottom;
+  vertical-align: middle;
 }
 
 .search-form__button--minus {
   padding: 0px;
 
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 .search-form__button-form {
@@ -650,9 +662,8 @@ vertical-align: middle;
 
 .search-form input[type="number"]:focus {
   background-color: #ffffff;
-  outline-width: 2px;
-  outline-style: solid;
-  outline-color: #e5e5e5;
+  border: 2px solid #e5e5e5;
+  outline: none;
 }
 
 .search-form input[type="text"]:hover {
@@ -661,8 +672,10 @@ vertical-align: middle;
 }
 
 .search-form input[type="text"]:focus {
+  padding-left: 11px;
   background-color: #ffffff;
-  outline: 2px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
+  outline: none;
 }
 
 .search-form__button--plus:hover,
@@ -676,10 +689,10 @@ vertical-align: middle;
 
 .search-form__button--plus:active,
 .search-form__button--minus:active {
-  color: #81b3d2;
-  outline: none;
   padding-right: 0px;
   padding-left: 0px;
+  color: #81b3d2;
+  outline: none;
 }
 
 .search-form__button-form:focus,
